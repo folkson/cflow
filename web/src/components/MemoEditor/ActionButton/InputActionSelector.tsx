@@ -30,7 +30,7 @@ const InputActionSelector = (props: Props) => {
   const enabledSystemShortcuts = new Set(sysShortcutConfig.split(',').map(key => key.trim()));
 
   const action_list = [
-    { name: "待办", action: "checkbox", icon: "CheckSquare", tips: "todo list", configKey: "todo"},
+    { name: "待办", action: "checkbox", icon: "CircleCheckBig", tips: "todo list", configKey: "todo"},
     { name: "代码块", action: "code", icon: "Code", tips: "代码", configKey: "code"},
     { name: "新建表格", action: "add_table", icon: "Table", tips: "输入表格", configKey: "table"},
     { name: "表格加一列", action: "add_col", icon: "ArrowRightToLine", tips: "表格增加一列", configKey: "add_col"},
@@ -75,6 +75,7 @@ const InputActionSelector = (props: Props) => {
                   className={"w-full max-w-full truncate text-black cursor-pointer rounded text-sm leading-6 hover:bg-zinc-300 shrink-0 "}
                   onClick={() => onActionSelectorClick(action_info['action'])}
                   style={padding_style}
+                  onMouseDown={(e) => {e.preventDefault();}}
                 >
                   <CustomIcon name={action_info['icon']} />{action_info['name']}
                 </span>
@@ -95,6 +96,7 @@ const InputActionSelector = (props: Props) => {
                 <span
                   className={"w-full max-w-full truncate text-black cursor-pointer rounded text-sm leading-6 hover:bg-zinc-300 shrink-0 "}
                   onClick={() => onActionSelectorClick(action_info['action'])}
+                  onMouseDown={(e) => {e.preventDefault();}}
                   style={padding_style}
                 >
                   <CustomIcon name={action_info['icon']} />{action_info['name']}

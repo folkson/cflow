@@ -1219,7 +1219,12 @@ const MemoEditor = (props: Props) => {
         {show_word_cnt && (word_cnt>0 || hasContent) && (
           <span className="pr-4 text-xs text-gray-500 ">有效字数: {word_cnt}</span>
         )}
-          <Button color="success" disabled={!allowSave} onClick={handleSaveBtnClick}>
+          <Button
+            color="success"
+            disabled={!allowSave}
+            onClick={handleSaveBtnClick}
+            onMouseDown={(e) => {e.preventDefault();}}
+          >
             {t("editor.save")}
           </Button>
         </div>
