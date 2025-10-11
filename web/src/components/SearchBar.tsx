@@ -54,7 +54,7 @@ const SearchBar: React.FC<Props> = (props: Props) => {
     () => {
       filterStore.setTextFilter(queryText.length === 0 ? undefined : queryText);
     },
-    100,
+    1000,
     [queryText]
   );
 

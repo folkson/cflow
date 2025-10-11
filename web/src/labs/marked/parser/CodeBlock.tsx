@@ -14,7 +14,7 @@ const renderer = (rawStr: string) => {
 
   const language = matchResult[1] || "plaintext";
   if (language === MERMAID_LANGUAGE) {
-    return <MermaidBlock content={matchResult[2]} />;
+    return <MermaidBlock key={`${matchResult[2]}-${Math.random()}`} content={matchResult[2]} />;
   } else if (language === "__html") {
     return <div dangerouslySetInnerHTML={{ __html: matchResult[2] }} />;
   }
