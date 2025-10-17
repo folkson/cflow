@@ -20,9 +20,11 @@
 # 说明
 cflow为个人魔改版[memos](https://github.com/usememos/memos)，基于官方0.18.2版本开发。
 
-视频演示：[B站视频](https://www.bilibili.com/video/BV1q6421Z7yw/)
+视频演示：
+- [cflow 1.0演示](https://www.bilibili.com/video/BV1q6421Z7yw/)
+- [cflow 2.0演示](https://www.bilibili.com/video/BV1ohghzZEdg/)
 
-cflow 主要为个人使用(借助 GPT4)定制开发的魔改应用，并非为了开源而设计，所以代码质量差等问题请见谅(能运行就行原则)。
+cflow 主要为个人使用定制开发的魔改应用，并非为了开源而设计，所以代码质量差等问题请见谅(能运行就行原则)。
 
 如有其他需求，欢迎自行二次魔改。
 
